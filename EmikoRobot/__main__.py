@@ -380,8 +380,8 @@ def emiko_about_callback(update, context):
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Komi's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for Komi - San.",
+            "\n\n_Nakiri's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for Nakiri - Erina.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -811,7 +811,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "[I'm Alive Now!](https://telegra.ph/file/a85f35499ecedc8771e8e.mp4)",
+                "[I'm Alive Now!](https://telegra.ph/file/7cc959d97c7f5007a1059.mp4)",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
