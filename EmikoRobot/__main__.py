@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/e627baf23c5cd3e0cff73.mp4)
+✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/45400b8f3548fe61b8e22.mp4)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Komi", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Erina", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💝 Add Komi To Your Group 💝", url="t.me/KomiXryu_Bot?startgroup=new"),
+            text="💝 Add Erina To Your Group 💝", url="t.me/Erina_GroupBot?startgroup=new"),
     ],
 ]
 
@@ -110,8 +110,8 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-START_IMG = "https://telegra.ph/file/d32d70709d5807fe18fda.jpg"
-START_MSG = "Heyyo, Komi here to help!!"
+START_IMG = "https://telegra.ph/file/26bffe6974136ec106625.jpg"
+START_MSG = "Heyyo, Erina here to help!!"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @Ryu_God \
@@ -230,17 +230,17 @@ def start(update: Update, context: CallbackContext):
             )
     else:
          update.effective_message.reply_photo(
-            START_IMG, "ʏᴏ, Komi ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            START_IMG, "ʏᴏ, Nakiri ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime,
             ),
             parse_mode=ParseMode.HTML,
              reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="❤Sᴜᴘᴘᴏʀᴛ❤", url="https://telegram.dog/Komisansupport")
+                  InlineKeyboardButton(text="❤Sᴜᴘᴘᴏʀᴛ❤", url="https://telegram.dog/ErinaSupport")
                   ],
                   [
-                  InlineKeyboardButton(text="🔰Uᴘᴅᴀᴛᴇs🔰", url="https://telegram.dog/Komiupdates")
+                  InlineKeyboardButton(text="🔰Uᴘᴅᴀᴛᴇs🔰", url="https://telegram.dog/ErinaUpdates")
                   ]
                 ]
             ),
@@ -373,7 +373,7 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text="๏ I'm *Komi*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Erina*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -388,14 +388,14 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Komiupdates"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/ErinaUpdates"),
                  ],
                  [
                     InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Otaku Chat", url="https://t.me/Otaku_zon"),
+                    InlineKeyboardButton(text="Anime Chat", url="https://t.me/AnimeChatAura"),
                  ],
                  [
-                    InlineKeyboardButton(text="Darling", url="https://t.me/Ryu_God"),
+                    InlineKeyboardButton(text="Master", url="https://t.me/TheBlackLinen"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -448,14 +448,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Komi support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Komi.",
+            text="*๏ Erina support chats*"
+            "\nJoin My Support Group/Channel for see or report a problem about Nakiri.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/Komisansupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/Komiupdates"),
+                    InlineKeyboardButton(text="Support", url="t.me/ErinaSupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/ErinaUpdates"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -468,7 +468,7 @@ def emiko_about_callback(update, context):
 
     elif query.data == "emiko_credit":
         query.message.edit_text(
-            text=f"๏ Credis for Komi\n"
+            text=f"๏ Credis for Erina\n"
             "\nHere Developers Making And Give Inspiration For Made The EmikoRobot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
