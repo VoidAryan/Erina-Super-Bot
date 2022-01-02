@@ -468,8 +468,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/Komiupdates)\n\n"
-            + "╘══「 Powered By [Komi - San](https://t.me/KomiXryu_Bot) | [Network](https://t.me/toman_network) 」\n",
+            + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/ErinaUdates)\n\n"
+            + "╘══「 Powered By [Nakiri - Erina](https://t.me/ErinaGroupBot) | [Network](https://t.me/Anime_X_Clan) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -483,7 +483,7 @@ def stats(update, context):
                     )
                     + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/Komiupdates)\n\n"
                 )
-                + "╘══「 Powered By [Komi - San](https://t.me/KomiXryu_Bot) | [Network](https://t.me/toman_network)」\n"
+                + "╘══「 Powered By [Nakiri - Erina](https://t.me/ErinaGroupBot) | [Network](https://t.me/Anime_X_Clan)」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
