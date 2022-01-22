@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/45400b8f3548fe61b8e22.mp4)
+✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/6ed7542ba8a1d6fed8459.mp4)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -392,7 +392,7 @@ def emiko_about_callback(update, context):
                  ],
                  [
                     InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Anime Chat", url="https://t.me/AnimeChatAura"),
+                    InlineKeyboardButton(text="Anime Chat", url="https://t.me/Anime_Clan_Group"),
                  ],
                  [
                     InlineKeyboardButton(text="Master", url="https://t.me/TheBlackLinen"),
