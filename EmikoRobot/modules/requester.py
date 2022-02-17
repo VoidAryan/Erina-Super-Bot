@@ -262,7 +262,7 @@ async def delete_message(e):
                             tx = await tbot.get_messages(e.chat_id, ids=e.message_id)
                             xx = tx.raw_text
                             btns = [
-                                [Button.url("💠 Start Bot 💠", url="https://t.me/DakiSuperbot")]]
+                                [Button.url("💠 Start Bot 💠", url="https://t.me/Erina_GroupBot")]]
                         
                             await e.edit(f"**REJECTED**\n\n~~{xx}~~", buttons=[Button.inline("Request Rejected 🚫", data="ndone")])
                             await tbot.send_message(int(groupID), f"**⚠️ Request Rejected By Admin !!**\n\n~~{xx}~~", buttons=btns)
