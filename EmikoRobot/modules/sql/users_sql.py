@@ -1,7 +1,7 @@
 import threading
 
 from EmikoRobot import dispatcher
-from EmikoRobot.modules.sql import BASE, SESSION
+from EmikoaRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
@@ -11,6 +11,7 @@ from sqlalchemy import (
     UniqueConstraint,
     func,
 )
+
 from sqlalchemy.sql.sqltypes import BigInteger
 
 
