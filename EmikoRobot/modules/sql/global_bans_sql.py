@@ -1,6 +1,7 @@
 import threading
+
 from EmikoRobot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, String, UnicodeText
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
 from sqlalchemy.sql.sqltypes import BigInteger
 
 
@@ -161,6 +162,6 @@ def migrate_chat(old_chat_id, new_chat_id):
         SESSION.commit()
 
 
-# create in memory userid to avoid disk access
+# Create in memory userid to avoid disk access
 __load_gbanned_userid_list()
 __load_gban_stat_list()
