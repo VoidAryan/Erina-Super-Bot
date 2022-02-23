@@ -1,9 +1,12 @@
 import threading
 import time
 from typing import Union
+
 from sqlalchemy import Column, String, Boolean, UnicodeText, Integer
+
 from EmikoRobot.modules.sql import SESSION, BASE
 from sqlalchemy.sql.sqltypes import BigInteger
+
 
 
 class ChatAccessConnectionSettings(BASE):
@@ -17,8 +20,7 @@ class ChatAccessConnectionSettings(BASE):
 
     def __repr__(self):
         return "<Chat access settings ({}) is {}>".format(
-            self.chat_id,
-            self.allow_connect_to_chat,
+            self.chat_id, self.allow_connect_to_chat,
         )
 
 
@@ -113,8 +115,9 @@ def disconnect(user_id):
             SESSION.delete(disconnect)
             SESSION.commit()
             return True
-        SESSION.close()
-        return False
+        else:
+            SESSION.close()
+            return False
 
 
 def add_history_conn(user_id, chat_id, chat_name):
