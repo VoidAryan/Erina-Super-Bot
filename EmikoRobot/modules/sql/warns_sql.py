@@ -1,9 +1,9 @@
 import threading
 
 from EmikoRobot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, String, UnicodeText, distinct, func, Integer
-from sqlalchemy.sql.sqltypes import BigInteger
+from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
 from sqlalchemy.dialects import postgresql
+from sqlalchemy.sql.sqltypes import BigInteger
 
 
 class Warns(BASE):
@@ -22,10 +22,7 @@ class Warns(BASE):
 
     def __repr__(self):
         return "<{} warns for {} in {} for reasons {}>".format(
-            self.num_warns,
-            self.user_id,
-            self.chat_id,
-            self.reasons,
+            self.num_warns, self.user_id, self.chat_id, self.reasons,
         )
 
 
@@ -215,7 +212,8 @@ def get_warn_setting(chat_id):
         setting = SESSION.query(WarnSettings).get(str(chat_id))
         if setting:
             return setting.warn_limit, setting.soft_warn
-        return 3, False
+        else:
+            return 3, False
 
     finally:
         SESSION.close()
