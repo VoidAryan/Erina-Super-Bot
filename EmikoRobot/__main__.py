@@ -388,14 +388,14 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Admins", callback_data="emiko_admin"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/ErinaUpdates"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/void_network"),
                  ],
                  [
                     InlineKeyboardButton(text="Support", callback_data="emiko_support"),
-                    InlineKeyboardButton(text="Anime Chat", url="https://t.me/Anime_Clan_Group"),
+                    InlineKeyboardButton(text="Anime Chat", url="https://t.me/horimiya_family"),
                  ],
                  [
-                    InlineKeyboardButton(text="Master", url="https://t.me/TheBlackLinen"),
+                    InlineKeyboardButton(text="Master", url="https://t.me/voidxtoxic"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
@@ -448,14 +448,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Erina support chats*"
+            text="*๏ Hanabi support chats*"
             "\nJoin My Support Group/Channel for see or report a problem about Nakiri.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/ErinaSupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/ErinaUpdates"),
+                    InlineKeyboardButton(text="Support", url="t.me/void_support"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/void_network"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="emiko_"),
@@ -466,10 +466,10 @@ def emiko_about_callback(update, context):
         )
 
 
-    elif query.data == "emiko_credit":
+    elif query.data == "hanabi_credit":
         query.message.edit_text(
             text=f"๏ Credis for Erina\n"
-            "\nHere Developers Making And Give Inspiration For Made The EmikoRobot",
+            "\nHere Developers Making And Give Inspiration For Made The Hanabirobot",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
