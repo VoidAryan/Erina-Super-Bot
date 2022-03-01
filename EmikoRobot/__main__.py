@@ -82,7 +82,7 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/6ed7542ba8a1d6fed8459.mp4)
+✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/6f520d1cb7760f3b5e3e8.mp4)
 ────────────────────────
 × *Uptime:* `{}`
 × `{}` *users, across* `{}` *chats.*
@@ -92,7 +92,7 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Erina", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Hanabi", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Get Help", callback_data="help_back"),
@@ -102,7 +102,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💝 Add Erina To Your Group 💝", url="t.me/Erina_GroupBot?startgroup=new"),
+            text="💝 Add Erina To Your Group 💝", url="t.me/hanabixbot?startgroup=new"),
     ],
 ]
 
@@ -110,8 +110,8 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-START_IMG = "https://telegra.ph/file/26bffe6974136ec106625.jpg"
-START_MSG = "Heyyo, Erina here to help!!"
+START_IMG = "https://telegra.ph/file/6f520d1cb7760f3b5e3e8.mp4"
+START_MSG = "Heyyo, hanabi here to help!!"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project by contacting @Ryu_God \
